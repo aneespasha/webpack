@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.17.1",
+    "bootstrap-sass": "^3.3.7",
+    "copy-webpack-plugin": "^4.5.0",
+    "jquery": "^3.2.1",
+    "jquery-form": "^4.2.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
+  },
+  "dependencies": {
+    "cookies-eu-banner": "^1.2.10",
+    "webpack": "^4.2.0"
+  }
+}
