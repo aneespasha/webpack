@@ -38,5 +38,7 @@
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
 }
