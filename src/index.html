@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>webpack/ES6 setup</title>
+</head>
+<body>
+
+
+<div class="carousel slide" data-ride="carousel" id="carousel-1">
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="inner-slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 ">
+              <div class="iphone-mockup"><img src="assets/img/iphone.svg" class="device">
+              </div>
+            </div>
+            <div class="col-sm-8 pull-right">
+              <div class="intro">
+                <h2>Highlight1</h2>
+                <p>Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat,
+                  pellentesque ut laoreet vitae. Aliqua sed justo ligula.</p><a
+                class="btn btn-primary" role="button" href="#">Action Button</a></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="inner-slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 ">
+              <div class="iphone-mockup"><img src="assets/img/iphone.svg" class="device">
+              </div>
+            </div>
+            <div class="col-sm-8 pull-right">
+              <div class="intro">
+                <h2>Highlight2</h2>
+                <p>Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat,
+                  pellentesque ut laoreet vitae. Aliqua sed justo ligula.</p><a
+                class="btn btn-primary" role="button" href="#">Action Button</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="inner-slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 ">
+              <div class="iphone-mockup"><img src="assets/img/iphone.svg" class="device">
+              </div>
+            </div>
+            <div class="col-sm-8 pull-right">
+              <div class="intro">
+                <h2>Highlight3</h2>
+                <p>Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat,
+                  pellentesque ut laoreet vitae. Aliqua sed justo ligula.</p><a
+                class="btn btn-primary" role="button" href="#">Action Button</a></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div><a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev"><i
+    class="glyphicon glyphicon-chevron-left"></i><span class="sr-only">Previous</span></a><a
+    class="right carousel-control" href="#carousel-1" role="button" data-slide="next"><i
+    class="glyphicon glyphicon-chevron-right"></i><span class="sr-only">Next</span></a></div>
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-1" data-slide-to="1"></li>
+    <li data-target="#carousel-1" data-slide-to="2"></li>
+  </ol>
+</div>
+
+<div class="article-dual-column">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="intro">
+          <h1 class="text-center">Your Wonderful Article Title</h1>
+          <p class="text-center">Sub text here<span class="date">April 8th, 2018 </span>
+          </p><img class="img-responsive" src="./images/Image00110.jpg"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-2 col-md-offset-1 col-sm-3">
+        <div class="toc">
+          <p>Table of Contents</p>
+          <ul>
+            <li><a href="#">Aliquam In Arcu </a></li>
+            <li><a href="#">Ut vehicula rhoncus</a></li>
+            <li><a href="#">Lorem Ipsum </a></li>
+            <li><a href="#">Dolor sit amet</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 col-sm-9">
+        <div class="text">
+          <p>Sed lobortis mi. Suspendisse vel placerat ligula. <span style="text-decoration: underline;">Vivamus</span>
+            ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget
+            velit pulvinar dictum vel in
+            justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+          </p>
+          <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac lacus. <strong>Ut vehicula
+            rhoncus</strong> elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit <em>pulvinar
+            dict</em> vel in justo. Vestibulum
+            ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+          <h2>Aliquam In Arcu </h2>
+          <p>Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis
+            tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae.</p>
+          <figure><img src=<%= require("./images/Image00110.jpg") %>>
+            <figcaption>Caption</figcaption>
+          </figure>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+            Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis
+            tristique lectus. Aliquam in arcu eget velit
+            pulvinar dictum vel in justo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap glyphicons classes -->
+<div class="large-ic">
+  <i class="glyphicon glyphicon-cloud"></i>
+  <i class="glyphicon glyphicon-remove"></i>
+  <i class="glyphicon glyphicon-user"></i>
+  <i class="glyphicon glyphicon-envelope"></i>
+  <i class="glyphicon glyphicon-thumbs-up"></i>
+
+  <!-- font-awesome classes -->
+  <i class="fa fa-spinner fa-spin"></i>
+  <i class="fa fa-circle-o-notch fa-spin"></i>
+  <i class="fa fa-refresh fa-spin"></i>
+  <i class="fa fa-cog fa-spin"></i>
+  <i class="fa fa-spinner fa-pulse"></i>
+  <i class="fa fa-car fa-4x fa-stack-2x"></i>
+
+  <!-- material-design-icons class and contents -->
+  <i class="mdi mdi-cloud"></i>
+  <i class="mdi mdi-fridge-filled-bottom"></i>
+  <i class="material-icons">attachment</i>
+  <i class="material-icons">computer</i>
+  <i class="material-icons">traffic</i>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
